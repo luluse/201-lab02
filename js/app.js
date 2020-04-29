@@ -1,7 +1,8 @@
 'use strict';
 
+// question 1
 var lordOfTheRings = prompt ('Do I like The Lord of the Rings?');
-// console.log('You anwered ' + lordOfTheRings + ' when I asked you if I liked The Lord of the Ring');
+// console.log('You answered ' + lordOfTheRings + ' when I asked you if I liked The Lord of the Ring');
 
 if(lordOfTheRings.toLowerCase() === 'yes' || lordOfTheRings.toLowerCase() === 'y'){
   alert('You\'re right, that\'s my favorite movie');
@@ -11,8 +12,9 @@ if(lordOfTheRings.toLowerCase() === 'yes' || lordOfTheRings.toLowerCase() === 'y
   alert('Please answer with a yes or a no');
 }
 
+// question 2
 var whereImFrom = prompt ('Am I from the US?');
-// console.log('You anwered ' + whereImFrom + ' when I asked you if I am from the US');
+// console.log('You answered ' + whereImFrom + ' when I asked you if I am from the US');
 
 if(whereImFrom.toLowerCase() === 'yes' || whereImFrom.toLowerCase() === 'y'){
   alert('You\'re wrong, I am from France.');
@@ -22,8 +24,9 @@ if(whereImFrom.toLowerCase() === 'yes' || whereImFrom.toLowerCase() === 'y'){
   alert('Please answer with a yes or a no.');
 }
 
+// question 3
 var westSeattle = prompt ('Do I live in West Seattle?');
-// console.log('You anwered ' + westSeattle + ' when I asked you if I live in West Seattle');
+// console.log('You answered ' + westSeattle + ' when I asked you if I live in West Seattle');
 
 if(westSeattle.toLowerCase() === 'yes' || westSeattle.toLowerCase() === 'y'){
   alert('Good guess, I live in West Seattle.');
@@ -33,8 +36,9 @@ if(westSeattle.toLowerCase() === 'yes' || westSeattle.toLowerCase() === 'y'){
   alert('Please answer with a yes or a no.');
 }
 
+// question 4
 var favoriteSeason = prompt ('Is Summer my favorite season?');
-// console.log('You anwered ' + favoriteSeason + ' when I asked you if summer was my favorite');
+// console.log('You answered ' + favoriteSeason + ' when I asked you if summer was my favorite');
 
 if(favoriteSeason.toLowerCase() === 'yes' || favoriteSeason.toLowerCase() === 'y'){
   alert('So true, I love sun and heat.');
@@ -44,8 +48,9 @@ if(favoriteSeason.toLowerCase() === 'yes' || favoriteSeason.toLowerCase() === 'y
   alert('Please answer with a yes or a no.');
 }
 
+// question 5
 var brunette = prompt ('Am I a brunette?');
-// console.log('You anwered ' + brunette + ' when I asked you if I was a brunette');
+// console.log('You answered ' + brunette + ' when I asked you if I was a brunette');
 
 if(brunette.toLowerCase() === 'yes' || brunette.toLowerCase() === 'y'){
   alert('You\'re right, I am a brunette.');
@@ -55,6 +60,7 @@ if(brunette.toLowerCase() === 'yes' || brunette.toLowerCase() === 'y'){
   alert('Please answer with a yes or a no.');
 }
 
+// Welcome message to user
 var guest = prompt ('What is your name?');
 alert('Hello ' + guest + ', Welcome to my website.');
 alert('Hope you will enjoy my biography, have a great day ' + guest + '!');
