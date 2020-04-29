@@ -68,15 +68,16 @@ var correctAnswer = 16;
 
 for(var i = 0; i < 4; i++){
   if(i === 3){
-    alert('You\'re out of guesses.');
+    alert('Last chance!');
   }
   var numberGuess = prompt ('Let\'s play a game! Can you guess how many air plants I have?');
+  numberGuess = parseInt(numberGuess);
   if(numberGuess === correctAnswer){
     alert('Good guess! You\'re awesome');
     break;
   } else if(numberGuess > correctAnswer){
     alert('Too high, try again!');
-  } else(numberGuess < correctAnswer);{
+  } else if(numberGuess < correctAnswer){
     alert('Too low, try again!');
   }
 }
