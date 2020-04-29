@@ -1,6 +1,7 @@
 'use strict';
 
-var lordOfTheRings = prompt ('Do I like lords of the rings?');
+var lordOfTheRings = prompt ('Do I like The Lord of the Rings?');
+// console.log('You anwered ' + lordOfTheRings + ' when I asked you if I liked The Lord of the Ring');
 
 if(lordOfTheRings.toLowerCase() === 'yes' || lordOfTheRings.toLowerCase() === 'y'){
   alert('You\'re right, that\'s my favorite movie');
@@ -11,6 +12,7 @@ if(lordOfTheRings.toLowerCase() === 'yes' || lordOfTheRings.toLowerCase() === 'y
 }
 
 var whereImFrom = prompt ('Am I from the US?');
+// console.log('You anwered ' + whereImFrom + ' when I asked you if I am from the US');
 
 if(whereImFrom.toLowerCase() === 'yes' || whereImFrom.toLowerCase() === 'y'){
   alert('You\'re wrong, I am from France.');
@@ -21,6 +23,7 @@ if(whereImFrom.toLowerCase() === 'yes' || whereImFrom.toLowerCase() === 'y'){
 }
 
 var westSeattle = prompt ('Do I live in West Seattle?');
+// console.log('You anwered ' + westSeattle + ' when I asked you if I live in West Seattle');
 
 if(westSeattle.toLowerCase() === 'yes' || westSeattle.toLowerCase() === 'y'){
   alert('Good guess, I live in West Seattle.');
@@ -31,6 +34,7 @@ if(westSeattle.toLowerCase() === 'yes' || westSeattle.toLowerCase() === 'y'){
 }
 
 var favoriteSeason = prompt ('Is Summer my favorite season?');
+// console.log('You anwered ' + favoriteSeason + ' when I asked you if summer was my favorite');
 
 if(favoriteSeason.toLowerCase() === 'yes' || favoriteSeason.toLowerCase() === 'y'){
   alert('So true, I love sun and heat.');
@@ -41,6 +45,7 @@ if(favoriteSeason.toLowerCase() === 'yes' || favoriteSeason.toLowerCase() === 'y
 }
 
 var brunette = prompt ('Am I a brunette?');
+// console.log('You anwered ' + brunette + ' when I asked you if I was a brunette');
 
 if(brunette.toLowerCase() === 'yes' || brunette.toLowerCase() === 'y'){
   alert('You\'re right, I am a brunette.');
