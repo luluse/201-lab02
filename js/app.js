@@ -55,3 +55,6 @@ if(brunette.toLowerCase() === 'yes' || brunette.toLowerCase() === 'y'){
   alert('Please answer with a yes or a no.');
 }
 
+var guest = prompt ('What is your name?');
+alert('Hello ' + guest + ', Welcome to my website.');
+alert('Hope you will enjoy my biography, have a great day ' + guest + '!');
