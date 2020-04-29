@@ -1,11 +1,14 @@
 'use strict';
 
+// var countPoints = 0;
+
 // question 1
 var lordOfTheRings = prompt ('Do I like The Lord of the Rings?');
 // console.log('You answered ' + lordOfTheRings + ' when I asked you if I liked The Lord of the Ring');
 
 if(lordOfTheRings.toLowerCase() === 'yes' || lordOfTheRings.toLowerCase() === 'y'){
   alert('You\'re right, that\'s my favorite movie');
+  // countPoints++;
 } else if(lordOfTheRings.toLowerCase() === 'no' || lordOfTheRings.toLowerCase() === 'n'){
   alert('Too bad, that\'s actually my favorite movie');
 } else {
@@ -58,6 +61,27 @@ if(brunette.toLowerCase() === 'yes' || brunette.toLowerCase() === 'y'){
   alert('Too bad, I\'m actually a brunette.');
 } else {
   alert('Please answer with a yes or a no.');
+}
+
+// question 6
+var correctAnswer = 16;
+
+for(var i = 0; i < 4; i++){
+  if(i === 3){
+    alert('You\'re out of guesses.');
+  }
+  var numberGuess = prompt ('Let\'s play a game! Can you guess how many air plants I have?');
+  if(numberGuess === correctAnswer){
+    alert('Good guess! You\'re awesome');
+    break;
+  } else if(numberGuess > correctAnswer){
+    alert('Too high, try again!');
+  } else(numberGuess < correctAnswer);{
+    alert('Too low, try again!');
+  }
+}
+if(i === 4){
+  alert('Wrong guess, I have 16 airplants.');
 }
 
 // Welcome message to user
