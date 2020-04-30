@@ -85,6 +85,22 @@ if(i === 4){
   alert('Wrong guess, I have 16 airplants.');
 }
 
+// Question 7
+var correctGuess = ['spain', 'portugal', 'greece', 'italy', 'sweden'];
+
+for(var index = 0; index < 6; index++){
+  var countryVisited = prompt('Can you guess which European country I visited?');
+  if( index === 5){
+    alert('You\'re out of guesses!');
+  } else if(correctGuess.includes(countryVisited.toLowerCase())){
+    alert('Awesome Guess!');
+    break;
+  } else {
+    alert('Try again');
+  }
+}
+alert('I visited ' + correctGuess + '! and Greece was definitely my favorite.');
+
 // Welcome message to user
 var guest = prompt ('What is your name?');
 alert('Hello ' + guest + ', Welcome to my website.');
