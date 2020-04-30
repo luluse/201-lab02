@@ -29,11 +29,16 @@ section{
   margin: 30px;
 }
 
-.unordered {
+ul {
   list-style-type: square;
 }
 
-.ordered{
+li span{
+  position: relative;
+  left: 10px;
+}
+
+ol{
   list-style-type: decimal;
 }
 
