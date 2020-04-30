@@ -1,6 +1,8 @@
 'use strict';
 
-// var countPoints = 0;
+var countPoints = 0;
+var guest = prompt ('Hi, What is your name?');
+alert('Hello ' + guest + ', Welcome to my website.');
 
 // question 1
 var lordOfTheRings = prompt ('Do I like The Lord of the Rings?');
@@ -8,7 +10,7 @@ var lordOfTheRings = prompt ('Do I like The Lord of the Rings?');
 
 if(lordOfTheRings.toLowerCase() === 'yes' || lordOfTheRings.toLowerCase() === 'y'){
   alert('You\'re right, that\'s my favorite movie');
-  // countPoints++;
+  countPoints++;
 } else if(lordOfTheRings.toLowerCase() === 'no' || lordOfTheRings.toLowerCase() === 'n'){
   alert('Too bad, that\'s actually my favorite movie');
 } else {
@@ -23,6 +25,7 @@ if(whereImFrom.toLowerCase() === 'yes' || whereImFrom.toLowerCase() === 'y'){
   alert('You\'re wrong, I am from France.');
 } else if(whereImFrom.toLowerCase() === 'no' || whereImFrom.toLowerCase() === 'n'){
   alert('True, I grew up in France.');
+  countPoints++;
 } else {
   alert('Please answer with a yes or a no.');
 }
@@ -33,6 +36,7 @@ var westSeattle = prompt ('Do I live in West Seattle?');
 
 if(westSeattle.toLowerCase() === 'yes' || westSeattle.toLowerCase() === 'y'){
   alert('Good guess, I live in West Seattle.');
+  countPoints++;
 } else if(westSeattle.toLowerCase() === 'no' || westSeattle.toLowerCase() === 'n'){
   alert('Wrong, I live in West Seattle.');
 } else {
@@ -45,6 +49,7 @@ var favoriteSeason = prompt ('Is Summer my favorite season?');
 
 if(favoriteSeason.toLowerCase() === 'yes' || favoriteSeason.toLowerCase() === 'y'){
   alert('So true, I love sun and heat.');
+  countPoints++;
 } else if(favoriteSeason.toLowerCase() === 'no' || favoriteSeason.toLowerCase() === 'n'){
   alert('Wrong guess, I love summer.');
 } else {
@@ -57,6 +62,7 @@ var brunette = prompt ('Am I a brunette?');
 
 if(brunette.toLowerCase() === 'yes' || brunette.toLowerCase() === 'y'){
   alert('You\'re right, I am a brunette.');
+  countPoints++;
 } else if(brunette.toLowerCase() === 'no' || brunette.toLowerCase() === 'n'){
   alert('Too bad, I\'m actually a brunette.');
 } else {
@@ -73,7 +79,8 @@ for(var i = 0; i < 4; i++){
   var numberGuess = prompt ('Let\'s play a game! Can you guess how many air plants I have?');
   numberGuess = parseInt(numberGuess);
   if(numberGuess === correctAnswer){
-    alert('Good guess! You\'re awesome');
+    alert('Good guess! You\'re awesome.');
+    countPoints++;
     break;
   } else if(numberGuess > correctAnswer){
     alert('Too high, try again!');
@@ -86,22 +93,24 @@ if(i === 4){
 }
 
 // Question 7
-var correctGuess = ['spain', 'portugal', 'greece', 'italy', 'sweden'];
+var correctGuess = ['spain', 'portugal', 'greece', 'italy', 'sweden', 'norway', 'uk'];
 
 for(var index = 0; index < 6; index++){
-  var countryVisited = prompt('Can you guess which European country I visited?');
+  var countryVisited = prompt('Can you guess one European country I visited?');
   if( index === 5){
     alert('You\'re out of guesses!');
   } else if(correctGuess.includes(countryVisited.toLowerCase())){
     alert('Awesome Guess!');
+    countPoints++;
     break;
   } else {
     alert('Try again');
   }
 }
-alert('I visited ' + correctGuess + '! and Greece was definitely my favorite.');
+alert('I visited ' + correctGuess + ' and Greece was definitely my favorite.');
+
+// How much did the user score?
+alert('You guessed ' + countPoints + ' questions right out of 7! Thanks for playing with me ' + guest + '.');
 
 // Welcome message to user
-var guest = prompt ('What is your name?');
-alert('Hello ' + guest + ', Welcome to my website.');
 alert('Hope you will enjoy my biography, have a great day ' + guest + '!');
