@@ -2,7 +2,7 @@
 
 var countPoints = 0;
 var guest = prompt ('Hi, What is your name?');
-alert('Hello ' + guest + ', Welcome to my website.');
+alert('Hello ' + guest + ', Welcome to my website. Let\'s see how well you know me.');
 
 var questions = ['Do I like The Lord of the Rings?', 'Am I from the US?', 'Do I live in West Seattle?', 'Is Summer my favorite season?', 'Am I a brunette?'];
 var firstGuess = ['You\'re right, that\'s my favorite movie', 'You\'re wrong, I am from France.', 'Good guess, I live in West Seattle.', 'So true, I love sun and heat.','You\'re right, I am a brunette.'];
@@ -43,7 +43,7 @@ function questionSix(){
     if(i === 3){
       alert('Last chance!');
     }
-    var numberGuess = prompt ('Let\'s play a game! Can you guess how many air plants I have?');
+    var numberGuess = prompt ('Let\'s play a game! Can you guess how many air plants I have? (between 0 and 20)');
     numberGuess = parseInt(numberGuess);
     if(numberGuess === correctAnswer){
       alert('Good guess! You\'re awesome.');
